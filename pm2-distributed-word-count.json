@@ -1,0 +1,46 @@
+{
+  "apps": [
+    {
+      "name": "coordinator",
+      "script": "./distributed-word-count/coordinator.js"
+    },
+    {
+      "name": "learner",
+      "script": "./distributed-word-count/learner.js"
+    },
+    {
+      "name": "sidecar",
+      "script": "./distributed-word-count/sidecar.js"
+    },
+    {
+      "name": "proposer1",
+      "script": "./distributed-word-count/proposer.js",
+      "args": "0"
+    },
+    {
+      "name": "proposer2",
+      "script": "./distributed-word-count/proposer.js",
+      "args": "1"
+    },
+    {
+    "name": "proposer3",
+    "script": "./distributed-word-count/proposer.js",
+    "args": "2"
+    },
+    {
+      "name": "acceptor1",
+      "script": "./distributed-word-count/acceptor.js",
+      "args": "0"
+    },
+    {
+      "name": "acceptor2",
+      "script": "./distributed-word-count/acceptor.js",
+      "args": "1"
+    },
+    {
+    "name": "acceptor3",
+    "script": "./distributed-word-count/acceptor.js",
+    "args": "2"
+    }
+  ]
+}
